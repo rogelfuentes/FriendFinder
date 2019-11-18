@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Page</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1 class="text-center">
+                <span class="fa fa-heart-o"></span> Friend Finder</h1>
+            <hr>
+            <h2 class="text-center">Create your Profile</h2>
+            <br>
+            <div class="text-center">
+                <a href="/myfriends">
+                    <button class="btn btn-lg btn-primary">
+                        <span class="fa fa-list-alt"></span> View Friends</button>
+                </a>
+                <a href="/home">
+                    <button class="btn btn-lg btn-default">
+                        <span class="fa fa-home"></span>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <!-- Reservation Page -->
+                <div class="card">
+                    <div class="card-header">
+                        New Profile
+                    </div>
+                    <div class="card-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="survey-name">Name (Require)</label>
+                                <input type="text" class="form-control" id="friend-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="survey-photo">Link your Photo (Required)</label>
+                                <input type="text" class="form-control" id="friend-photo">
+                            </div>
+                            <button type="submit" class="btn btn-primary submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <!-- Reservation Page -->
+                <div class="card">
+                    <div class="card-header">
+                        Survey
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Question 1</h5>
+                        <p class="card-text">Your mind is always buzzing with unexplored ideas and plans.
+                            <div class="btn-group btn-group-toggle" id="Q1" data-toggle="buttons">
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionOne" value="1">(Strong
+                                    Disagree) 1
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionOne" value="2"> 2
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionOne" value="3"> 3
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionOne" value="4"> 4
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionOne" value="5"> 5 (Strong Agree)
+                                </label>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Question 2</h5>
+                        <p class="card-text">Generally speaking, you rely more on your experience than your
+                            imagination.
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionTwo">(Strong
+                                    Disagree) 1
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionTwo"> 2
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionTwo"> 3
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionTwo"> 4
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionTwo"> 5 (Strong Agree)
+                                </label>
+                            </div>
+                        </p>
+
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Question 3</h5>
+                        <p class="card-text">You find it easy to stay relaxed and focused even when there is
+                            some pressure.
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionThree">(Strong
+                                    Disagree) 1
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionThree"> 2
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionThree"> 3
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionThree"> 4
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionThree"> 5 (Strong Agree)
+                                </label>
+                            </div>
+                        </p>
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Question 4</h5>
+                        <p class="card-text">You rarely do something just out of sheer curiosity.
+                        </p>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="questionFour">(Strong
+                                Disagree) 1
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="questionFour"> 2
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="questionFour"> 3
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="questionFour"> 4
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="questionFour"> 5 (Strong Agree)
+                            </label>
+                        </div>
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Question 5</h5>
+                        <p class="card-text">People can rarely upset you.
+                        </p>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="questionFive">(Strong
+                                Disagree) 1
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="questionFive"> 2
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="questionFive"> 3
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="questionFive"> 4
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="questionFive"> 5 (Strong Agree)
+                            </label>
+                        </div>
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Question 6</h5>
+                        <p class="card-text">It is often difficult for you to relate to other people’s
+                            feelings.
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionSix">(Strong
+                                    Disagree) 1
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionSix"> 2
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionSix"> 3
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionSix"> 4
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionSix"> 5 (Strong Agree)
+                                </label>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Question 7</h5>
+                        <p class="card-text">In a discussion, truth should be more important than people’s
+                            sensitivities.
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionSeven">(Strong
+                                    Disagree) 1
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionSeven"> 2
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionSeven"> 3
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionSeven"> 4
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionSeven"> 5 (Strong Agree)
+                                </label>
+                            </div>
+                        </p>
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Question 8</h5>
+                        <p class="card-text">You rarely get carried away by fantasies and ideas.
+                        </p>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="questionEight">(Strong
+                                Disagree) 1
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="questionEight"> 2
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="questionEight"> 3
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="questionEight"> 4
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="questionEight"> 5 (Strong Agree)
+                            </label>
+                        </div>
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Question 9</h5>
+                        <p class="card-text">You think that everyone’s views should be respected regardless
+                            of whether they are supported by facts or not.
+                        </p>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="questionNine">(Strong
+                                Disagree) 1
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="questionNine"> 2
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="questionNine"> 3
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="questionNine"> 4
+                            </label>
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="questionNine"> 5 (Strong Agree)
+                            </label>
+                        </div>
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Question 10</h5>
+                        <p class="card-text">You feel more energetic after spending time with a group of
+                            people.
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionTen">(Strong
+                                    Disagree) 1
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionTen"> 2
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionTen"> 3
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionTen"> 4
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="questionTen"> 5 (Strong Agree)
+                                </label>
+                            </div>
+                        </p>
+                        </p>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <a href="/api/tables">API Table Link</a> |
+                <a href="/api/waitlist">API Wait List</a>
+        </div>
+    </footer>
+
+    </div>
+
+</body>
+
+</html>
+
+<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+<script type="text/javascript">
+    // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+    // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+
+    $(".submit").on("click", function (event) {
+        event.preventDefault();
+
+        // Here we grab the form elements
+        var newFriend = {
+            name: $("#friend-name").val(),
+            photo: $("#friend-photo").val(),
+            scores: [
+                $("input[name=questionOne]:checked").val(),
+                $("input[name=questionTwo]:checked").val(),
+                $("input[name=questionThree]:checked").val(),
+                $("input[name=questionFour]:checked").val(),
+                $("input[name=questionFive]:checked").val(),
+                $("input[name=questionSix]:checked").val(),
+                $("input[name=questionSeven]:checked").val(),
+                $("input[name=questionEigth]:checked").val(),
+                $("input[name=questionNine]:checked").val(),
+                $("input[name=questionTen]:checked").val(),
+            ],
+        };
+
+        console.log(newFriend);
+
+        // This line is the magic. It"s very similar to the standard ajax function we used.
+        // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+        // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+        // depending on if a tables is available or not.
+
+        $.post("/api/survey", newFriend,
+            function (friend) {
+
+
+
+                // If a table is available... tell user they are booked.
+                if (friend) {
+                    alert("Mach-Friend");
+                }
+
+                // Clear the form when submitting
+                $("#friend-name").val("");
+                $("#friend-photo").val("");
+                $("input[name=questionOne]:checked").val("");
+                $("input[name=questionTwo]:checked").val("");
+                $("input[name=questionThree]:checked").val("");
+                $("input[name=questionFour]:checked").val("");
+                $("input[name=questionFive]:checked").val("");
+                $("input[name=questionSix]:checked").val("");
+                $("input[name=questionSeven]:checked").val("");
+                $("input[name=questionEigth]:checked").val("");
+                $("input[name=questionNine]:checked").val("");
+                $("input[name=questionTen]:checked").val("");
+            });
+
+    });
+
+</script>
